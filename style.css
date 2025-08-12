@@ -1,0 +1,67 @@
+/* 3bravewidows - Vintage Style */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f4ec;
+    color: #3b2f2f;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5a4636;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #7c5e42;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    color: #5a4636;
+}
+
+footer {
+    background-color: #5a4636;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #cbb58f;
+}
+
+.article {
+    background: #fff9f0;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #7c5e42;
+}
+
