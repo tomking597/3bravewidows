@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - 3bravewidows</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Lightbox overlay */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border: 4px solid white;
+        }
+        .lightbox:target {
+            display: flex;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,16 +53,30 @@
 
     <main>
         <!-- 📌 IMAGE BLOCK 1 -->
-        <!-- Paste your image file name or URL in the src="" below -->
-        <img src="images/Family_Ng_dated_8thMay_1965.jpeg" alt="Grandma LowBorYing and sister with Dad and his brother flanking">
+        <a href="#img1"><img src="images/Family_Ng_dated_8thMay_1965.jpeg" alt="Grandma LowBorYing and sister with Dad and his brother flanking"></a>
+        <div class="lightbox" id="img1">
+            <a href="#" class="lightbox-close">&times;</a>
+            <img src="images/Family_Ng_dated_8thMay_1965.jpeg" alt="Grandma LowBorYing and sister with Dad and his brother flanking">
+        </div>
 
         <!-- 📌 IMAGE BLOCK 2 -->
-        <img src="images/Francis_Ng_family_circa1955.jpeg" alt="Francis Ng Tham Guan family in the 1950s">
+        <a href="#img2"><img src="images/Francis_Ng_family_circa1955.jpeg" alt="Francis Ng Tham Guan family in the 1950s"></a>
+        <div class="lightbox" id="img2">
+            <a href="#" class="lightbox-close">&times;</a>
+            <img src="images/Francis_Ng_family_circa1955.jpeg" alt="Francis Ng Tham Guan family in the 1950s">
+        </div>
 
         <!-- 📌 IMAGE BLOCK 3 -->
-        <img src="images/mum_and_dad_weddingpicture.png" alt="Marriage at Holy Rosary Church Brickfields">
+        <a href="#img3"><img src="images/mum_and_dad_weddingpicture.png" alt="Marriage at Holy Rosary Church Brickfields"></a>
+        <div class="lightbox" id="img3">
+            <a href="#" class="lightbox-close">&times;</a>
+            <img src="images/mum_and_dad_weddingpicture.png" alt="Marriage at Holy Rosary Church Brickfields">
+        </div>
 
-        <!-- 📌 Add more images below by copying one of the <img> lines above -->
+        <!-- 📌 To add more images:
+             1. Copy an <a>...</a> + <div class="lightbox">...</div> block.
+             2. Change img file name and id (#imgX) to next number.
+        -->
     </main>
 
     <footer>
