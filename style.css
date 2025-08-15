@@ -65,3 +65,28 @@ img {
     border-left: 5px solid #7c5e42;
 }
 
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-thumb {
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.03);
+}
+
+.lightbox-image {
+  max-width: 90%;
+  height: auto;
+}
+
