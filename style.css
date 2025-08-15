@@ -107,4 +107,15 @@ figcaption {
   margin-top: 10px;
   font-size: 1em;
 }
+.view-photo-link {
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+  border-bottom: 1px dashed #2c3e50;
+}
+
+.view-photo-link:hover {
+  color: #d35400;
+  border-bottom-color: #d35400;
+}
 
